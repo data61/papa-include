@@ -41,6 +41,8 @@ minimum (h :| t) =
   -> a
 (++) =
   (<>)
+
+infixr 5 ++
   
 mappend ::
   Semigroup a =>

@@ -17,6 +17,8 @@ import Data.Functor.Bind(Apply, (.>), (<.))
 (*>) =
   (.>)
 
+infixl 4 *>
+
 (>>) ::
   Apply f =>
   f a
@@ -25,6 +27,8 @@ import Data.Functor.Bind(Apply, (.>), (<.))
 (>>) =
   (.>)
 
+infixl 1 >>
+
 (<*) ::
   Apply f =>
   f b
@@ -32,3 +36,6 @@ import Data.Functor.Bind(Apply, (.>), (<.))
   -> f b
 (<*) =
   (<.)
+
+infixl 4 <*
+

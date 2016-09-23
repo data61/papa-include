@@ -33,6 +33,8 @@ concatMap =
 (>>=) =
   (>>-)
 
+infixl 1 >>=
+
 (=<<) ::
   Bind f =>
   (a -> f b)
@@ -40,3 +42,6 @@ concatMap =
   -> f b
 (=<<) =
   (-<<)
+
+infixr 1 =<<
+
